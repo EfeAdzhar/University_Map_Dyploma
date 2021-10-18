@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet var arView: ARView!
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         setupARView()
     }
     // MARK: Setup methods
@@ -23,7 +22,7 @@ class ViewController: UIViewController {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = [.horizontal, .vertical]
         configuration.environmentTexturing = .automatic
-        arView.session.run(configuration)
+        //arView.session.run(configuration)
         
     }
     
